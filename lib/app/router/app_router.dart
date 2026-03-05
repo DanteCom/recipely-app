@@ -13,19 +13,19 @@ final routerConfig = GoRouter(
     GoRoute(
       path: AppRoutes.login.path,
       name: AppRoutes.login.name,
-      builder: (context, state) => LoginPage(),
+      builder: (context, state) => const LoginPage(),
     ),
 
     StatefulShellRoute.indexedStack(
-      builder: (context, state, navigationShell) =>
-          AppShellPage(navigationShell),
+      pageBuilder: (context, state, navigationShell) =>
+          NoTransitionPage(child: AppShellPage(navigationShell)),
       branches: [
         StatefulShellBranch(
           routes: [
             GoRoute(
               path: AppRoutes.home.path,
               name: AppRoutes.home.name,
-              builder: (context, state) => HomePage(),
+              builder: (context, state) => const HomePage(),
             ),
           ],
         ),
@@ -34,7 +34,7 @@ final routerConfig = GoRouter(
             GoRoute(
               path: AppRoutes.search.path,
               name: AppRoutes.search.name,
-              builder: (context, state) => SearchPage(),
+              builder: (context, state) => const SearchPage(),
             ),
           ],
         ),
@@ -43,7 +43,7 @@ final routerConfig = GoRouter(
             GoRoute(
               path: AppRoutes.notifications.path,
               name: AppRoutes.notifications.name,
-              builder: (context, state) => NotificationsPage(),
+              builder: (context, state) => const NotificationsPage(),
             ),
           ],
         ),
@@ -52,7 +52,7 @@ final routerConfig = GoRouter(
             GoRoute(
               path: AppRoutes.profile.path,
               name: AppRoutes.profile.name,
-              builder: (context, state) => ProfilePage(),
+              builder: (context, state) => const ProfilePage(),
             ),
           ],
         ),
