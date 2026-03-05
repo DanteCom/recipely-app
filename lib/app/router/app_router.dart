@@ -8,7 +8,7 @@ import 'package:recipely_app/features/profile/profile_page.dart';
 import 'package:recipely_app/features/notifications/notifications_page.dart';
 
 final routerConfig = GoRouter(
-  initialLocation: AppRoutes.home.path,
+  initialLocation: AppRoutes.login.path,
   routes: [
     GoRoute(
       path: AppRoutes.login.path,

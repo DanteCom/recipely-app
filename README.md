@@ -1,33 +1,63 @@
-📱 Recipely App
+# 📱 Recipely App
 
-Recipely — это pet-проект мобильного приложения для рецептов, разработанный на Flutter.
+**Recipely** — pet-проект мобильного приложения для рецептов, разработанный на **Flutter**.
 
-🎨 Design: Recipely – Food Recipe Mobile App UI Kit
+## 🎨 Design
 
 UI дизайн взят из Figma Community:
 
+**Recipely – Food Recipe Mobile App UI Kit**
+
 🔗 https://www.figma.com/community/file/1160186880726418317
 
-✨ Features
+## ✨ Features
 
-· 🍲 Просмотр рецептов
+* 🍲 Просмотр рецептов
+* 🔍 Поиск рецептов
+* 🔔 Уведомления
+* 👤 Профиль пользователя
+* 🎨 Кастомный Bottom Navigation Bar с FAB
 
-· 🔍 Поиск рецептов
-
-· 🔔 Уведомления
-
-· 👤 Профиль пользователя
-
-· 🎨 Кастомный Bottom Navigation Bar с FAB
-
-🚀 Purpose of the Project
+## 🚀 Purpose of the Project
 
 Этот проект создан для:
 
-· практики Flutter UI
+* практики Flutter UI
+* работы с кастомными формами и клипперами
+* реализации современного mobile UI
+* улучшения навыков архитектуры Flutter приложений
 
-· работы с кастомными формами и клипперами
+## 📸 Preview
 
-· реализации современного mobile UI
+# 📱 Recipely App
 
-· улучшения навыков архитектуры Flutter приложений
+**Recipely** — pet-проект мобильного приложения для рецептов, разработанный на **Flutter**.
+
+## 🎨 Design
+
+UI дизайн взят из Figma Community:
+
+**Recipely – Food Recipe Mobile App UI Kit**
+
+🔗 https://www.figma.com/community/file/1160186880726418317
+
+## ✨ Features
+
+* 🍲 Просмотр рецептов
+* 🔍 Поиск рецептов
+* 🔔 Уведомления
+* 👤 Профиль пользователя
+* 🎨 Кастомный Bottom Navigation Bar с FAB
+
+## 🚀 Purpose of the Project
+
+Этот проект создан для:
+
+* практики Flutter UI
+* работы с кастомными формами и клипперами
+* реализации современного mobile UI
+* улучшения навыков архитектуры Flutter приложений
+
+## 📸 Preview
+
+<img src="screenshots/login.png" width="250" alt="Login screen"/>
