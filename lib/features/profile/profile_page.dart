@@ -8,7 +8,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Home', style: AppTextStyles.s38w700(Colors.black)),
+        child: Text('Profile', style: AppTextStyles.s38w700(Colors.black)),
       ),
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:recipely_app/app/router/app_routes.dart';
 import 'package:recipely_app/shared/resources/resources.dart';
 import 'package:recipely_app/shared/widgets/app_text_styles.dart';
 
@@ -31,7 +33,7 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsGeometry.all(24),
+                  padding: const EdgeInsetsGeometry.all(24),
                   child: Column(
                     children: [
                       Text(
@@ -49,7 +51,7 @@ class LoginPage extends StatelessWidget {
                             'Login',
                             style: AppTextStyles.s16w700(Colors.white),
                           ),
-                          onPressed: () {},
+                          onPressed: () => context.goNamed(AppRoutes.home.name),
                         ),
                       ),
                       const SizedBox(height: 8),

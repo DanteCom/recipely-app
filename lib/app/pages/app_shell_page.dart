@@ -13,35 +13,37 @@ class AppShellPage extends StatefulWidget {
 }
 
 class _AppShellPageState extends State<AppShellPage> {
+  bool isActive(int index) => currentIndex == index;
   void goBranch(int index) => widget._navigationShell.goBranch(index);
-  bool isActive(int index) => widget._navigationShell.currentIndex == index;
+
+  int get currentIndex => widget._navigationShell.currentIndex;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: widget._navigationShell,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: const Color(0xFF042628),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-        child: AppSvgPicture(Svgs.chef),
+        child: const AppSvgPicture(Svgs.chef),
       ),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-          color: Colors.transparent,
           boxShadow: [
             BoxShadow(
               blurRadius: 40,
               offset: Offset(0, -10),
-              color: Color(0x8095A8C3),
+              color: Color(0xFF95A8C3),
             ),
           ],
         ),
         child: ClipPath(
           clipper: BNBClipper(),
           child: Container(
-            decoration: BoxDecoration(color: Colors.white),
+            color: Colors.white,
             child: SafeArea(
               child: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -62,7 +64,7 @@ class _AppShellPageState extends State<AppShellPage> {
                       inactiveIcon: Svgs.searchInactive,
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Expanded(
                     child: BottomNavItem(
                       isActive: isActive(2),
