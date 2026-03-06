@@ -14,13 +14,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int currentCategoryIndex = 0;
 
+  double get topPadding => MediaQuery.of(context).padding.top;
+  double get bottomPadding => MediaQuery.of(context).padding.bottom;
+
   final categories = <String>['Breakfast', 'Lunch', 'Dinner', 'Snack'];
 
   @override
   Widget build(BuildContext context) {
-    final bottomPadding = MediaQuery.of(context).padding.bottom;
-    final topPadding = MediaQuery.of(context).padding.top;
-
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        blurRadius: 40 * progress,
+                        blurRadius: 20 * progress,
                         offset: Offset(0, 2 * progress),
                         color: const Color(0xFF95A8C3),
                       ),
@@ -217,8 +217,8 @@ class _HomePageState extends State<HomePage> {
                               : const Color(0xFFF1F5F5),
                           borderRadius: BorderRadius.circular(40),
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 24,
                             vertical: 9,
+                            horizontal: 24,
                           ),
                           child: Text(
                             categories[index],

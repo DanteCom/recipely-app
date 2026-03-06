@@ -3,6 +3,7 @@ part of 'resources.dart';
 class Svgs {
   Svgs._();
 
+  static const String arrowLeft = 'assets/svgs/arrow-left.svg';
   static const String arrowRight = 'assets/svgs/arrow-right.svg';
   static const String avocado = 'assets/svgs/avocado.svg';
   static const String bellActive = 'assets/svgs/bell_active.svg';
