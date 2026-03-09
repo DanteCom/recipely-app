@@ -3,8 +3,8 @@ import 'package:recipely_app/app/router/app_routes.dart';
 import 'package:recipely_app/features/home/home_page.dart';
 import 'package:recipely_app/app/pages/app_shell_page.dart';
 import 'package:recipely_app/features/login/login_page.dart';
-import 'package:recipely_app/features/search/search_page.dart';
-import 'package:recipely_app/features/profile/profile_page.dart';
+import 'package:recipely_app/features/search/pages/search_page.dart';
+import 'package:recipely_app/features/profile/pages/profile_page.dart';
 import 'package:recipely_app/features/notifications/notifications_page.dart';
 
 final routerConfig = GoRouter(
