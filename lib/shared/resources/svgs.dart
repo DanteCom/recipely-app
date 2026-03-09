@@ -22,7 +22,7 @@ class Svgs {
   static const String profileInactive = 'assets/svgs/profile_inactive.svg';
   static const String searchActive = 'assets/svgs/search_active.svg';
   static const String searchInactive = 'assets/svgs/search_inactive.svg';
-  static const String setting = 'assets/svgs/setting.svg';
+  static const String settings = 'assets/svgs/settings.svg';
   static const String sun = 'assets/svgs/sun.svg';
   static const String wheat = 'assets/svgs/wheat.svg';
 }

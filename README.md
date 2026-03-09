@@ -30,7 +30,8 @@ UI дизайн взят из Figma Community:
 ## 📸 Preview
 
 <p align="center">
-  <img src="screenshots/login.png" width="250">
-  <img src="screenshots/home.png" width="250">
-  <img src="screenshots/search.png" width="250">
+  <img src="screenshots/login.png" width="24%">
+  <img src="screenshots/home.png" width="24%">
+  <img src="screenshots/search.png" width="24%">
+  <img src="screenshots/profile.png" width="24%">
 </p>
